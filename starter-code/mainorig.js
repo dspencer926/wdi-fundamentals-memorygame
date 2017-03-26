@@ -1,6 +1,6 @@
 var cards = ['queen', 'queen', 'king', 'king'];
 var cardsInPlay = [];
-var boardCards = [];
+var boardCards = []
 
 var gameboard = document.getElementById('game-board');
 
@@ -9,7 +9,7 @@ var createBoard = function() {
 		boardCards[i] = document.createElement('div');
 		boardCards[i].setAttribute('class', 'card');
 		boardCards[i].setAttribute('data-card',cards[i]);
-		gameboard.appendChild(boardCards[i]);
+		document.getElementById('game-board').appendChild(boardCards[i]);
 		boardCards[i].addEventListener('click', isTwoCards);
 	};
 };
@@ -23,7 +23,6 @@ var isTwoCards = function() {
 	};
 	if (cardsInPlay.length === 2) {
 		isMatch();
-		clearBoard();
 	};
 };
 
@@ -33,6 +32,7 @@ var isTwoCards = function() {
  	} else {
  		alert('NO GOOD!');
  	};
+ 	clearBoard();
 };
 
 var clearBoard = function() {
@@ -41,4 +41,3 @@ var clearBoard = function() {
 	};
 	cardsInPlay = []
 };
-createBoard();
