@@ -1,31 +1,36 @@
+body {
+	background-image: url('wood2.jpg');
+	background-size: 100%;
+}
+
 h1 {
 	color: rgb(2, 132, 130);
 	text-align: center;
 }
 
 h2 {
-	color: #ffd700;
+	color: #315896;
 	text-align: center;
 }
 
 p {
 	text-align: center;
+	color: rgb(49, 88, 150);
+	font-weight: 900;
 }
 
 span {
 	font-weight: bold;
-	color: red;
+	color: yellow;
 }
 
 nav {
-	background-color: #808080;
+	background: rgba(49, 88, 150, 0.5);
+	text-align: center;
 }
 
-footer{
-	background-color: #808080;
-	height: 32px;
-	line-height: 32px;
-	text-align: center;
+footer {
+
 }
 
 .desc {
@@ -36,27 +41,60 @@ footer{
 
 .board {
 	height: 50%;
-	width: 50%;
+	width: 100%;
 	display: inline-block;
 }
 
-.card{
+.card, .card2{
 	border: solid black 1px;
-	height: 200px;
+	height: 210.16px;
 	width: 150px;
-	background-color: yellow;
-	float: left;
-	margin: 8%;
+	background-image: url('card.jpg');
+	background-size: 100%;
 	border-radius: 10px;
+	margin: 20px;
+	float: left;
+}
+
+.card2 {
+	clear: left;
+}
+
+.flippedKing {
+	border: solid black 1px;
+	height: 210.16px;
+	width: 150px;
+	background-image: url('king.png');
+	background-size: 100%;
+	border-radius: 10px;
+	margin: 20px;
+	float: left;
+}
+
+.flippedQueen {
+	border: solid black 1px;
+	height: 210.16px;
+	width: 150px;
+	background-image: url('queen2.jpg');
+	background-size: 100%;
+	border-radius: 10px;
+	margin: 20px;
+	float: left;
 }
 
 .navlink {
-	background-color: #ffbf00;
-	text-decoration: none;
 	color: white;
+	text-decoration: none;
 	padding: 35px;
 	display: block;
 	float: left;
+}
+
+.foot {
+	background: rgba(220,220,220,0.5);
+	padding: 15px;
+	margin: 0 33%;
+	border: white solid;
 }
 
 .clearfix:after {
@@ -69,5 +107,5 @@ footer{
 }
 
 .navlink:hover {
-	background-color: #ee5f3c;
+	background: rgba(49, 88, 150, 0.75);
 }
